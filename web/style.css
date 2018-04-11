@@ -1,0 +1,77 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #ffb005e1;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    color:rgba(255, 255, 255, 0.76);
+}
+table{
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    background-color: #ff05059c;
+    color: white;
+    line-height: 30px;
+    padding-left:10px;
+}
+.container{
+    width: 880px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 0;
+    background-image: url("img/b.jpg");
+}
+li{
+    color:rgba(255, 255, 255, 0.76);
+    font-size: 18px;
+}
+td{
+    color:rgb(250, 112, 0);
+    font-size: 18px;
+}
+.dt{
+    width: 100px;
+    height:100px;
+    background-image: url("img/c.jpg");
+    transition:width 2s, height 2s;
+}
+.dt:hover{
+    width:370px;
+    height:350px;
+}
+.dtt{
+    width:198px;
+    height:100px;
+    background:red;
+    position:relative;
+    animation:myfirst 15s;
+}
+@keyframes myfirst{
+    0%   {background:red; left:0px; top:0px;}
+    50%  {background:yellow; left:500px; top:0px;}
+    100% {background:red; left:0px; top:0px;}
+}
+.dttt{
+    background-color: rgba(235, 222, 165, 0.973);
+    width:880px;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+}
+@media(max-width:880px){
+    .container{
+        width: 100%;
+    }
+    .dttt{
+        width:100%;
+        background-color: rgb(245, 48, 113);
+    }
+}
